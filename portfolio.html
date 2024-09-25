@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transition Fix</title>
+<style>
+    nav {
+        background-color: #FAF9F6;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        font-family: arial;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 1800px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    li a {
+        display: block;
+        width: 60px;
+        color: black;
+        text-decoration: none;
+        margin-top: 20px;
+        margin: 10px;
+    }
+
+    .ali {
+        margin-right: 300px;
+    }
+
+    .one {
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+
+    .parent {
+        display: flex;
+        background-color: #f9fcff;
+        background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+        padding-bottom: 140px;
+    }
+
+    .trans {
+        animation: moveleft 6s infinite alternate;
+    }
+
+    @keyframes moveleft {
+        from {
+            transform: translateX(5px);
+        }
+        to {
+            transform: translateX(100px);
+        }
+    }
+
+    .big {
+        display: flex;
+    }
+
+    .square {
+        background: salmon;
+        border-radius: 5px;
+        height: 75px;
+        margin: 100px;
+        transition: transform 1s;
+        width: 75px;
+    }
+
+    /* Corrected hover syntax */
+    .square:hover {
+        transform: rotate(90deg) scale(1.75) translateX(50px);
+    }
+
+    .second {
+        transition: transform 0.3s ease;
+    }
+
+    .second:hover {
+        transform: scale(1.4);
+    }
+	
+	
+	.icons {
+        transition: transform 0.3s ease;
+    }
+
+    .icons:hover {
+        transform: scale(1.1);
+    }
+	
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+   <li class="ali" style="font-size:35px;margin-left:45px;">Portfolio</li>
+  <li><a href="#home" style="margin-left:200px">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <button style="border-radius:20px;margin-left:450px;width:220px;background-color:orange;color:white;font-size:20px;border-color:transparent;padding:6px;">Contact</button>
+    </ul>
+    </nav>
+</header>
+
+<div class="parent">
+    <div class="one">
+        <h1 class="first" style="font-family:arial;font-size:60px;">Hello! I Am</h1>
+        <h1 style="color:purple;font-family:arial;font-size:80px;">Rao Umar</h1>
+        <p style="font-family:arial;font-size:20px;">I'm A Web Developer having 5 years of experience in expertise of creating website<br> with fully responsive also with backend part too.</p>
+        <button style="border-radius:20px;width:170px;background-color:orange;color:white;font-size:25px;border-color:transparent;">Order Now</button>
+    </div>
+
+    <div class="second">
+        <img class="trans" src="\Users\Rao umar\Downloads\myname.JFIF" style="height:500px;width:400px;margin-top:140px;margin-left:200px;filter: drop-shadow(30px 10px 4px #4444dd);">
+    </div>
+</div>
+
+<div class="aboutme">
+    <p style="text-align:center;font-size:25px;">My Expertise</p>
+    <h1 style="text-align:center;font-size:35px;font-family:arial;">Provide Wide Range of <br> Digital Services</h1>
+    <div class="big" style="display:flex; margin-top:50px;">
+  <div class="icon1">
+    <img src="\Users\Rao umar\Downloads\one.png" style="height:300px;width:400px;margin-left:120px;">
+			<p style="font-family:Courier New;font-size:20px;width:450px;margin-left:40px;">I can make well structured websites using html. My this skill will make your website so powerful.</p>
+ </div>
+  <div class="icon2">
+   <img src="\Users\Rao umar\Downloads\two.png" style="height:300px;width:200px;margin-left:150px;">
+  <p style="font-family:Courier New;font-size:20px;width:450px;margin-left:50px;">I can make well structured websites using html. My this skill will make your website so powerful.</p>
+        </div>
+  <div class="icon1">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNL1QHst9uq2NjqUd6UbzLutpyXov8UFKtG0fgpmeMIhh1O5KlK0fVx9nneFtE32QLDqQ&usqp=CAU" style="height:300px;width:400px;margin-left:150px;">
+ <p style="font-family:Courier New;font-size:20px;width:450px;margin-left:0px;">I can make well structured websites using html. My this skill will make your website so powerful.</p>
+  </div>
+  </div>
+</div>
+<div class="horizantalall" style="display:flex;border:2px solid;border-color:purple;margin-top:80px;margin-bottom:60px;">
+<div> 
+
+<div  class="this"style="display:flex;margin-left:100px;">
+
+<div class="icons">
+<img src="\Users\Rao umar\Downloads\circle.jpg" style="height:200px;">
+<h1 style="margin-left:45px;margin-bottom:40px;">HTML</h1>
+
+</div>
+
+<div class="icons">
+<img src="\Users\Rao umar\Downloads\circles.jpg" style="height:200px;">
+<h1 style="margin-left:60px;">CSS</h1>
+</div>
+</div>
+
+
+
+		<div  class="that"style="display:flex;margin-left:100px;">
+		<div class="icons">
+		<img src="\Users\Rao umar\Downloads\circ.jpg" style="height:200px;">
+		<h1 style="margin-left:35px;margin-bottom:30px;">JavaScript</h1>
+		</div>
+
+	<div class="icons">
+	<img src="\Users\Rao umar\Downloads\circular.jpg" style="height:200px;">
+<h1 style="margin-left:65px;margin-bottom:40px;" >React</h1>
+</div>
+</div>
+</div>
+
+<div class="myskill" style="margin-left:200px;margin-top:50px;">
+<h1 style="color:purple;">My Skill</h1>
+<h1 style="">Beautiful & Unique Development <br> experiences</h1>
+<p style="font-size:25px;font-family:arial;">I can work with number of technologies including html,css,JavaScript and React.<br>I can make highly interactive web pages.I can make an up to the mark website for<br> you in less time.<br><br><br> I also worked as a professional  freelancer for 2 years.You can also check my cv.<br>Here, you can download it.</p><br>
+<button style="background-color:orange;color:white;border-color:transparent;border-radius:30px;padding:10px;width:250px;font-size:25px;">Download CV</button>
+</div>
+</div>
+
+			
+<h1 style="text-align:center;font-size:25px;color:purple;font-family:arial;">Creative Work</h1>
+<h1 style="text-align:center;font-size:35px;font-family:arial;">Check My Portfolio</h1>
+
+<ul style="text-align:center;" >
+
+  <li style="font-family:arial;font-size:20px;"><a  style="margin-left:500px">All</a></li>
+  <li style="font-family:arial;font-size:20px;margin-left:40px;"><a >Game</a></li>
+  <li style="font-family:arial;font-size:20px;margin-left:40px;"><a >WebApp</a></li>
+  <li style="font-family:arial;font-size:20px;margin-left:40px;"><a >Website</a></li>
+  <li style="font-family:arial;font-size:20px;margin-left:40px;"><a >Brand</a></li>
+</ul>
+<div class="papa" style="display:flex;margin-top:30px;">
+<div>
+<img class="icons" src="\Users\Rao umar\Downloads\oneg.jfif" style="margin-left:50px;height:400px;width:450px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">2048 Game</h1>
+<div style="margin-left:120px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">Game</button>
+</div>
+</div>
+<div style="margin-left:100px;">
+<img class="icons" src="\Users\Rao umar\Downloads\twog.jfif"style="height:400px;width:475px; margin-left:20px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">Converter App</h1>
+<div style="margin-left:150px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">website</button>
+</div>
+
+</div>
+<div class="ty" style="margin-left:100px;">
+<img class="icons" src="\Users\Rao umar\Downloads\threeg.jfif" style="height:400px;width:475px;margin-left:20px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">Dictionary</h1>
+<div style="margin-left:120px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">WebApp</button>
+</div>
+
+</div>
+</div>
+
+
+<div class="papa" style="display:flex;margin-top:70px;">
+<div>
+<img src="\Users\Rao umar\Downloads\okthree.jfif" style="margin-left:50px;height:400px;width:450px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">PicEditor App</h1>
+<div style="margin-left:120px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">App</button>
+</div>
+
+</div>
+<div style="margin-left:100px;">
+<img  class="sd" src="\Users\Rao umar\Downloads\oktwo.jfif"style="height:400px;width:475px; margin-left:20px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">TicTacToe Game</h1>
+<div style="margin-left:150px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">Game</button>
+</div>
+
+</div>
+<div style="margin-left:100px;">
+<img src="\Users\Rao umar\Downloads\okone.jfif" style="height:400px;width:475px;margin-left:20px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px; font-size: clamp(1rem, -1.5rem + 8vw, 3rem);">Lang Translator</h1>
+<div style="margin-left:140px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">Web App</button>
+</div>
+
+</div>
+</div>
+<div class="daddy" style="display:flex;margin-right:50px;">
+<div>
+<img src="\Users\Rao umar\Downloads\people.jfif" style="margin-left:100px;height:400px;margin-top:200px;">
+</div>
+<div style="margin-left:300px; margin-top:200px;">
+<h1 style="color:purple;font-size:24px;font-family:arial;">Testimonials</h1>
+<h1 style="font-size:34px;font-family:arial;">Happy Clients Feedback</h1>
+<div style="display:flex;">
+<div style="font-size:94px;color:orange;margin-left:20px;" >&#x201C;</div> 
+<div> <p style="margin-left:60px; font-size:20px;font-family:DejaVu Sans Mono, monospace;">I am impressed with the project that this man done in very short time.I found a new creator who can work accurately and efficiently.It was a great experience.</p> <h1 style="margin-left:60px;">Kevin Andrew</h1><h2 style="margin-left:60px;font-family:FreeMono, monospace;">CEO of Company</h2></div>
+
+
+</div>
+<div style=" margin-left:100px;background-color:orange;color:white;font-size:50px;width:50px;border-radius:50; padding:5px;">&#8594;</div>
+
+
+
+
+
+
+
+</div>
+</div>
+<div class="headings" style="margin-top:110px;">
+<h1 style="color:purple; text-align:center;font-family:arial;">Latest news</h1>
+<h1 style="text-align:center; font-family:arial;">Blog & Articles</h1>
+</div>
+
+<div class="papa" style="display:flex;margin-top:30px;">
+<div>
+<img src="\Users\Rao umar\Downloads\oneg.jfif" style="margin-left:50px;height:400px;width:450px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">2048 Game</h1>
+<div style="margin-left:120px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">Game</button>
+</div>
+</div>
+<div style="margin-left:100px;">
+<img src="\Users\Rao umar\Downloads\twog.jfif"style="height:400px;width:475px; margin-left:20px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">Converter App</h1>
+<div style="margin-left:150px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">website</button>
+</div>
+
+</div>
+<div class="ty" style="margin-left:100px;">
+<img src="\Users\Rao umar\Downloads\threeg.jfif" style="height:400px;width:475px;margin-left:20px;border-radius:10px;padding-top:20px;">
+<h1 style="margin-left:170px;">Dictionary</h1>
+<div style="margin-left:120px;">
+<button style="border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px;font-size:15px;font-family:arial;padding:4px;" >HTML&CSS</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent;background-color:#2B2B2B;color:white; padding:2px; font-size:15px;font-family:arial; padding:4px;">JavaScript</button>
+<button style="margin-left:6px;border-radius:6px;border-color:transparent; background-color:#2B2B2B;color:white; padding:2px; font-size:15px; font-family:arial; padding:4px;">WebApp</button>
+</div>
+
+</div>
+</div>
+
+<h2 style="color:purple;font-size:25px;text-align:center">Get i Touch</h2>
+<h1 style="font-family:arial;font-size:40px;text-align:center">Any Questions? Feel Free to Contact</h1>
+
+<div class="cc" style="display:flex;padding-bottom:50px;padding-top:100px">
+<div claSS="MM" style="margin-left:300px">
+<h3 style="color:grey;"><i style="color:orange;font-size:34px" class="fa">&#xf041; &nbsp&nbsp&nbsp&nbsp&nbsp</i>Chakwal Pakistan</h3>
+<h3 style="color:grey;"><i style="font-size:34px; color:orange" class="fa">&#xf095; &nbsp&nbsp&nbsp&nbsp</i>0314-097</h3>
+
+<h3 style="color:gray;"><i style="font-size:34px ;color:orange" class="fa">&#xf1d9; &nbsp&nbsp&nbsp&nbsp</i>yes@gmail.com</h3>
+</div>
+<div class="gg" style="padding-left:300px">
+<input type="text" placeholder=" Name" style="padding:15px;width:400px"><br><br>
+<input type="text" placeholder=" Email" style="padding:15px;width:400px"><br><br>
+<input type="text" placeholder=" Number" style="padding:15px;width:400px"><br><br>
+
+<input type="text" placeholder="Message" style="padding:50px;width:400px"><br><br>
+  <button style="border-radius:44px;margin-left:0px;height:60px;width:120px;background-color:orange;color:white;font-size:20px;border-color:transparent;padding:6px;"> Submit</button>
+</div>
+</div>
+</div>
+
+			
+		
+
+
+
+		
+</body>
+</html>
+
